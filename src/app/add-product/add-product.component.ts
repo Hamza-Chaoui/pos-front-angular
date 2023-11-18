@@ -19,7 +19,7 @@ export class AddProductComponent {
   ngOnInit(): void {
     this.productForm = this.formBuilder.group({
       name: ['', Validators.required],
-      price: [0, [Validators.required, Validators.min(0)]]
+      price: [[Validators.required, Validators.min(0)]]
     });
   }
 

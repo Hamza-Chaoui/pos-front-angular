@@ -1,0 +1,16 @@
+<!-- product-list.component.html -->
+<div>
+  <h2>Product List</h2>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">ID</th>
+      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Name</th>
+      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Price</th>
+    </tr>
+    <tr *ngFor="let product of products" style="border: 1px solid #dddddd;">
+      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{ product.id }}</td>
+      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{ product.name }}</td>
+      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{ product.price | currency }}</td>
+    </tr>
+  </table>
+</div>
